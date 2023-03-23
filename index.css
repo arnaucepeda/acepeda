@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(31, 31, 31);
+}
+
+h1{
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+h3{
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 25px;
+}
+
+h2{
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+  color: rgb();
+  text-decoration: none;
+  font-size: 20px;
+}
+
+button:hover{
+  background-color: rgb(3, 131, 209);
+  color: white;
+}
+
+
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #007bff;
+  text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #000000;
+  color: white;
+}
+
+
+
+
+
+section{
+  margin: 1%;
+  padding: 1%;
+  background-color: rgba(0, 47, 87, 0.8);
+  justify-content: center;
+  text-align: center;
+}
+
+section h2{
+  text-decoration: underline;
+  padding: 0.5%;
+  font-size: 30px;
+}
+
+section h3{
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(130, 216, 238) 0.1em 0.1em 0.2em;
+}
+
+section .ex{
+  color: #007bff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 30px;
+  margin: 1%;
+  text-decoration: none;
+  border-radius: 10%;
+  background-color:rgba(31, 31, 31, 0.719);
+}
+
+section .ex:hover{
+  color: #ffffff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  background-color:rgba(31, 31, 31);
+  font-size: 33px;
+  margin: 2%;
+  text-decoration: none;
+}
+  
+  .hero-image {
+    background-image: url(0x0.jpg);
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  footer {
+    background-color: #000000;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-decoration: none;
+    margin: 1%;
+    background-color: rgb(3, 131, 209, 0.8);
+    font-size: 20px;
+    border-radius: 10%;
+
+  }
+
+footer a:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: black 0.1em 0.1em 0.2em;
+  background-color: rgb(4, 140, 219);
+  margin: 2%;
+  font-size: 24px;
+  border-radius: 10%;
+
+}
+
+#text {
+  font-size: 25px;
+  margin: 2%;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  
+}
+
+
+#curriculum img {
+  background-image: url('unnamed.png');
+  animation: none; 
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#curriculum img:hover {
+  animation: girar 2s linear infinite; 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  #text {
+    font-size: 15px;
+    margin: 2%;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    
+  }
+
+  section{
+    margin: 2%;
+    padding: 2%;
+    background-color: rgba(2, 55, 88, 0.8);
+    justify-content: center;
+    text-align: center;
+  }
+
+  #projectes img{
+    width: 200px;
+    height: 200px;
+  }
+
+  header {
+    font-size: 6px;
+    background-color: #000000;
+    padding: 0.8%;
+    margin: 1%;
+    text-align: center;
+  }
+}
+
+.touch {
+  background-color: #007bff; 
+  border: none; 
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  padding: 12px 24px; 
+  margin: 1%;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  border-radius: 4px; 
+  transition: background-color 0.3s ease; 
+}
+
+.touch:hover {
+  background-color: #0063ce;
+}
