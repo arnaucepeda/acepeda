@@ -1,16 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arnau Cepeda</title>
+    <script src="index.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
+
 <body>
-    <h1>Arnau Cepeda</h1>
-    <a href="./exercicis/ex1.html">Exercici 1</a>
-    <a href="./exercicis/ex2.html">Exercici 2</a>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:55px">I am Arnau Cepeda</h1>
+            <h3>And I'm a Programmer</h3>
+            <button
+                onclick="window.open('https://mail.google.com/mail/?view=cm&to=arnaucepeda5@gmail.com', '_blank')">Hire
+                me</button>
+        </div>
+    </div>
+
+    <header>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home"
+                class="active">➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a class="menu" href="#curriculum"><strong>Resume</strong></a>
+                <a class="menu" href="#projectes"><strong>Projects</strong></a>
+                <a class="menu" href="#html"><strong>Html Exercises</strong></a>
+                <a class="menu" href="#about"><strong>About me</strong></a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="menu-icon-5.png" height="25px"
+                    width="25px" alt="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="curriculum">
+            <h2>Resume:</h2>
+            <a href="curriculum_fol.pdf" download target="_blank"><img id="curriculum" src="unnamed.png"
+                    alt="curricumlum" class=""></img></a>
+        </section>
+        <section id="projectes">
+            <h2>Projects:</h2>
+            <a href="Treball_sintesis.pdf" download target="_blank"><img id="arcade" src="arca.png" height="300px"
+                    width="300px" alt="arcade" class=""></img></a>
+            <h3>⬆</h3>
+            <h3>Download Research Work</h3>
+        </section>
+
+        <section id="html">
+            <h2>Html Exercises:</h2>
+            <a href="./exercicis/ex1.html" target="_blank" class="ex">EX 1</a>
+            <a href="./exercicis/ex2.html" target="_blank" class="ex">EX 2</a>
+            <a href="./exercicis/Viladoms/ex3.html" target="_blank" class="ex">EX 3</a>
+        </section>
+
+        <section id="about">
+            <h2>About me:</h2>
+            <p id="text">Hello! My name is Arnau, and I'm a guy who's passionate about technology, video games, sports,
+                and everything related to programming. Since I was little, I've always enjoyed taking things apart and
+                understanding how they work, and as I've grown up, my interest in computers and technology has only
+                increased.
+            </p>
+
+            <p id="text">I love spending hours programming and creating new things, and I dream of becoming a great
+                programmer. I'm also passionate about working in teams and collaborating with other developers to create
+                larger and more complex projects. Competitiveness is also a big part of my personality, and I'm highly
+                motivated by participating in future projects.
+            </p>
+
+            <p id="text">In short, I'm a curious, passionate person with a strong desire to learn and explore new
+                horizons in the world of technology and video games. I love taking on new challenges and working hard to
+                achieve them, and I'm convinced that I have a lot to offer in the field of programming and technology.
+            </p>
+        </section>
+    </main>
+
     <br>
-    <a href="./exercicis/Viladoms/ex3.html">Exercici 3</a>
+
+    <footer>
+        <nav id="contacte">
+            <ul>
+                <button class="touch"
+                    onclick="window.open('https://www.linkedin.com/in/arnau-cepeda-vivas-b83998258', '_blank')">Linkedin</button>
+                <button class="touch"
+                    onclick="window.open('https://mail.google.com/mail/?view=cm&to=arnaucepeda5@gmail.com', '_blank')">Gmail</button>
+                <button class="touch" onclick="window.open('https://github.com/arnaucepeda', '_blank')">GitHub</button>
+
+            </ul>
+        </nav>
+    </footer>
 </body>
+
 </html>
