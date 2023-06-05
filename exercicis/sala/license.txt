@@ -1,0 +1,11 @@
+Model Information:
+* title:	Crypt of Kings
+* source:	https://sketchfab.com/3d-models/crypt-of-kings-90219f1b776a42218f2441ca9f3f04c1
+* author:	Brett Murphy (https://sketchfab.com/brettmurphy)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Crypt of Kings" (https://sketchfab.com/3d-models/crypt-of-kings-90219f1b776a42218f2441ca9f3f04c1) by Brett Murphy (https://sketchfab.com/brettmurphy) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
