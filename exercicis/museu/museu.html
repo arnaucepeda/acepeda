@@ -1,0 +1,100 @@
+<html>
+
+<head>
+	<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+	<a-scene look-controls cursor="rayOrigin: mouse">
+	
+		<a-sky color="#87CEEB"></a-sky>
+		<a-assets>
+			<a-asset-item id="sala" src="Models/sky_pano_-_milkyway.glb"></a-asset-item>
+	   </a-assets>
+	   <a-entity gltf-model="#sala" position="0 0 0" rotation="0 0 0" scale="77 77 77"></a-entity>
+		<!-- Los 6 altares de las armas-->
+		<a-entity position="0 -8  -75" scale="4.5 5 3.6">
+			<a-gltf-model src="Models/basic_red_rug.glb"></a-gltf-model>
+		</a-entity>
+
+		<a-entity position="35 -8  -30" scale="0.10 0.1 0.10">
+			<a-gltf-model src="Models/stylized_character_pedestal__agustin_honnun.glb"></a-gltf-model>
+		</a-entity>
+
+		<a-entity position="35 -8  -70" scale="0.10 0.1 0.10">
+			<a-gltf-model src="Models/stylized_character_pedestal__agustin_honnun.glb"></a-gltf-model>
+		</a-entity>
+
+		 <a-entity position="35 -8  -110" scale="0.10 0.1 0.10">
+			<a-gltf-model src="Models/stylized_character_pedestal__agustin_honnun.glb"></a-gltf-model>
+		</a-entity>
+
+		<a-entity position="-35 -8  -30" scale="0.10 0.1 0.10">
+			<a-gltf-model src="Models/stylized_character_pedestal__agustin_honnun.glb"></a-gltf-model>
+		</a-entity>
+
+		<a-entity position="-35 -8  -70" scale="0.10 0.1 0.10">
+			<a-gltf-model src="Models/stylized_character_pedestal__agustin_honnun.glb"></a-gltf-model>
+		</a-entity>
+
+		<a-entity position="-35 -8  -110" scale="0.10 0.1 0.10">
+			<a-gltf-model src="Models/stylized_character_pedestal__agustin_honnun.glb"></a-gltf-model>
+		</a-entity>
+	
+		<!--Armas Derecha-->
+		<a-entity position="35 0 -30" scale="0.02 0.02 0.02">
+		  <a-gltf-model src="Models/mortal_blade.glb"></a-gltf-model>
+		</a-entity>
+		<a-entity position="35 3 -70" scale="0.01 0.02 0.02" rotation="0 88 0">
+		  <a-gltf-model src="Models/moonlight_greatsword_-_ludwigs_holy_blade.glb"></a-gltf-model>
+		</a-entity>
+		<a-entity position="35 3 -107" scale="6 6 6" rotation="0 -100 0" >
+		  <a-gltf-model src="Models/malikeths_black_blade.glb"></a-gltf-model>
+		</a-entity>
+		
+		<!--Armas Izquierda-->
+		<a-entity position="-35 -4 -30" scale="15 15 15"  rotation="0 100 0" >
+		  <a-gltf-model src="Models/guts_greatsword_from_elden_ring.glb"></a-gltf-model>
+		</a-entity>
+		<a-entity position="-35 1 -70" scale="0.2 0.2 0.2"  rotation="0 100 0" >
+		  <a-gltf-model src="Models/saw_cleaver__bloodborne.glb"></a-gltf-model>
+		</a-entity>
+		
+		<a-entity position="-35 1 -115" scale="1 1 1"  rotation="0 0 0" >
+		  <a-gltf-model src="Models/firelink_greatsword.glb"></a-gltf-model>
+		</a-entity>
+		
+		<!--Jefe del Juego al final de la alfombra-->
+		<a-entity position="0 -8  -140" scale="0.15 0.3 0.15">
+			<a-gltf-model src="Models/pedestal.glb"></a-gltf-model>
+		</a-entity>
+		<a-entity position="-5 -4  -145" scale="7 8 7"  rotation="0 -180 0" animation="property: position; to: -5 8  -145; loop: true; dur: 5000; dir: alternate" >
+			<a-gltf-model src="Models/elden_rings_malenia.glb"></a-gltf-model>
+		</a-entity>
+
+		<a-entity position="0 33 -140" scale="5 5 5">
+			<a-gltf-model src="Models/japanese_tori_gate.glb"></a-gltf-model>
+		</a-entity>
+
+		<a-camera>
+			<a-cursor></a-cursor>
+		</a-camera>
+		<a-plane position="2 0 40" width="60" height="40" src="letmesoloher.png" rotation="0 180 0" mylink="https://www.vidaextra.com/rpg/fromsoftware-reconoce-a-let-me-solo-her-como-leyenda-elden-ring-le-ofrece-obsequio-legendario"></a-plane>
+		<script>
+			AFRAME.registerComponent('cursor-listener', {
+			  init: function () {
+				var el = this.el;
+				el.addEventListener('click', function () {
+				  var link = el.getAttribute('mylink');
+				  window.open(link, '_blank');
+				});
+			  }
+			});
+			document.querySelector('a-plane').setAttribute('cursor-listener', '');
+		</script>
+
+	</a-scene>
+	
+</body>
+
+</html>
